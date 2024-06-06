@@ -1,8 +1,8 @@
-import { businessModel } from "../models/business.model.js";
+import { businessesModel } from "../models/businesses.model.js";
 
 export class BusinessMongo {
   constructor() {
-    this.model = businessModel;
+    this.model = businessesModel;
   }
   async getAllBusinesses() {
     try {

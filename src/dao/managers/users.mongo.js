@@ -18,6 +18,7 @@ export class UserMongo {
   async getUserById(id) {
     try {
       const user = await this.model.findById(id);
+
       if (!user) {
         throw new Error("The user does not exist.");
       }

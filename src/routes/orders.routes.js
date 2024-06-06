@@ -5,7 +5,7 @@ const router = Router();
 
 router.get("/", getOrders);
 router.post("/", createOrder);
-router.get("/:uid", getOrderById);
-router.put("/:uid", resolveOrder);
+router.get("/:oid", getOrderById);
+router.put("/:oid", resolveOrder);
 
 export { router as ordersRouter };

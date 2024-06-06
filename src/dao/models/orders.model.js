@@ -1,6 +1,8 @@
+import mongoose from "mongoose";
+
 const orderSchema = new mongoose.Schema({
   number: String,
-  bussiness: [
+  business: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "businesses",
@@ -21,4 +23,4 @@ const orderSchema = new mongoose.Schema({
   },
 });
 
-export const orderModel = mongoose.model("orders", orderSchema);
+export const ordersModel = mongoose.model("orders", orderSchema);
